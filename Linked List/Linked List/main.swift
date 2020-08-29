@@ -51,3 +51,10 @@ print("After inserting: \(list3)")
 // MARK: Test of Pop operation
 list3.pop()
 print(list3)
+
+// MARK: Test Removing Last operation
+print("Before removing: \(list3)")
+let removedValue = list3.removeLast()
+
+print("After removing last node: \(list3)")
+print("Removed value: " + String(describing: removedValue))

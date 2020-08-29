@@ -19,9 +19,18 @@ node2.next = node3
 print(node1)
 
 // MARK: Test Push To Linked List
-var list = LinkedList<Int>()
-list.push(3)
-list.push(4)
-list.push(5)
+var list1 = LinkedList<Int>()
+list1.push(3)
+list1.push(4)
+list1.push(5)
 
-print(list)
+print(list1)
+
+
+// MARK: Tets Append To Linked List
+var list2 = LinkedList<Int>()
+list2.append(1)
+list2.append(2)
+list2.append(3)
+
+print(list2)		

@@ -85,3 +85,17 @@ print("Array contains last 3 elements: \(Array(listCollection.suffix(3)))")
 
 let sum = listCollection.reduce(0, +)
 print("Sum of all values: \(sum)")
+
+
+// MARK: Linked list COW (cope-on-write)
+var list5 = LinkedList<Int>()
+list5.append(1)
+list5.append(2)
+var list6 = list5
+print(list5)
+print(list6)
+
+print("After appending 3 to list 2")
+list6.append(3)
+print(list5)
+print(list6)

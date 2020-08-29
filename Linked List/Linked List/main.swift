@@ -47,3 +47,7 @@ for _ in 1...4 {
   middleNode = list3.insert(-1, after: middleNode)
 }
 print("After inserting: \(list3)")
+
+// MARK: Test of Pop operation
+list3.pop()
+print(list3)

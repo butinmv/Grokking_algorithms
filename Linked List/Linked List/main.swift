@@ -72,3 +72,16 @@ let removedValue1 = list4.remove(after: node)
 
 print("After removing at index \(index): \(list4)")
 print("Removing value: " + String(describing: removedValue1))
+
+// MARK: Using Collection
+var listCollection = LinkedList<Int>()
+for i in 0...9 {
+  listCollection.append(i)
+}
+print("List: \(listCollection)")
+print("First element: \(listCollection[listCollection.startIndex])")
+print("Array contains first 3 elements: \(Array(listCollection.prefix(3)))")
+print("Array contains last 3 elements: \(Array(listCollection.suffix(3)))")
+
+let sum = listCollection.reduce(0, +)
+print("Sum of all values: \(sum)")

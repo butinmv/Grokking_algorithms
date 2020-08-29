@@ -105,13 +105,3 @@ public struct LinkedList<Value> {
     return node.next?.value
   }
 }
-
-extension LinkedList: CustomStringConvertible {
-  
-  public var description: String {
-    guard let head = head else {
-      return "Empty list"
-    }
-    return String(describing: head)
-  }
-}

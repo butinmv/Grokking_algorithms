@@ -99,3 +99,22 @@ print("After appending 3 to list 2")
 list6.append(3)
 print(list5)
 print(list6)
+
+// MARK: Removing middle node on list8
+var list7 = LinkedList<Int>()
+list7.append(1)
+list7.append(2)
+var list8 = list7
+print(list7)
+print(list8)
+
+print("After appending 3 to list 2")
+list8.append(3)
+print(list7)
+print(list8)
+
+print("Removing middle node on list8")
+if let node = list8.node(at: 0) {
+  list8.remove(after: node)
+}
+print(list8)

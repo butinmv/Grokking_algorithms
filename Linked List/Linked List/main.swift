@@ -17,3 +17,11 @@ node1.next = node2
 node2.next = node3
 
 print(node1)
+
+// MARK: Test Push To Linked List
+var list = LinkedList<Int>()
+list.push(3)
+list.push(4)
+list.push(5)
+
+print(list)

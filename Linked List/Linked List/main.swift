@@ -58,3 +58,17 @@ let removedValue = list3.removeLast()
 
 print("After removing last node: \(list3)")
 print("Removed value: " + String(describing: removedValue))
+
+// MARK: Test removing a node after a particular node
+var list4 = LinkedList<Int>()
+list4.push(3)
+list4.push(2)
+list4.push(1)
+
+print("Befor removing at particular index: \(list4)")
+let index = 1
+let node = list4.node(at: index - 1)!
+let removedValue1 = list4.remove(after: node)
+
+print("After removing at index \(index): \(list4)")
+print("Removing value: " + String(describing: removedValue1))

@@ -93,6 +93,17 @@ public struct LinkedList<Value> {
     tail = prev
     return current.value
   }
+  
+  @discardableResult
+  public mutating func remove(after node: Node<Value>) -> Value? {
+    defer {
+      if node.next === tail {
+        tail = node
+      }
+      node.next = node.next?.next
+    }
+    return node.next?.value
+  }
 }
 
 extension LinkedList: CustomStringConvertible {

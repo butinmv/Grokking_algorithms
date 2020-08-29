@@ -33,4 +33,17 @@ list2.append(1)
 list2.append(2)
 list2.append(3)
 
-print(list2)		
+print(list2)
+
+// MARK: Test inserting at a particular index
+var list3 = LinkedList<Int>()
+list3.push(3)
+list3.push(2)
+list3.push(1)
+
+print("Before inserting: \(list3)")
+var middleNode = list3.node(at: 1)!
+for _ in 1...4 {
+  middleNode = list3.insert(-1, after: middleNode)
+}
+print("After inserting: \(list3)")

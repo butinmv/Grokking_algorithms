@@ -50,3 +50,24 @@ func printInReverse<T>(_ array: [T]) {
 }
 
 printInReverse([3, 4, 5, 6])
+
+// MARK: -- Challenge 2. Check Parentheses
+/// Check for balanced parentheses. Given a string, check if there are ( and ) characters, and return true if the parentheses in the string are balanced.
+func checkParantheses(_ string: String) -> Bool {
+  var stack = Stack<Character>()
+  
+  for character in string {
+    if character == "(" {
+      stack.push(character)
+    } else if character == ")" {
+      if stack.isEmpty {
+        return false
+      } else {
+        stack.pop()
+      }
+    }
+  }
+  return stack.isEmpty
+}
+print(checkParantheses("(aaaaaa))"))
+print(checkParantheses("((aaaaaa))"))
